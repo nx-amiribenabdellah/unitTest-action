@@ -1,0 +1,21 @@
+on:
+  workflow_call:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
+
+
+jobs:
+  run:
+    name: Run
+    runs-on: ubuntu-latest
+    env:
+      extensions: xml, opcache, xdebug, pcov
+      key: cache-v5
+      operating-system: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - id: foo
+        uses: nx-amiribenabdellah/unitTest-action@v1.1
