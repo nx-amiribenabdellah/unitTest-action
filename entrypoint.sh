@@ -2,6 +2,8 @@ composer require phpunit/phpunit
 composer dump-autoload -o
 ./vendor/bin/phpunit
 
-set -e
+./php CITest.php
+./php SwagTest.php
 
-phplint ./
+./phpl CITest.php
+./phpl SwagTest.php

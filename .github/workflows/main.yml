@@ -18,4 +18,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - id: foo
-        uses: nx-amiribesnabdellah/unitTest-action@v1.4
+        uses: nx-amiribesnabdellah/unitTest-action@v1.5
